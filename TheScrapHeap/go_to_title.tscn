@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpkmyq3wksfsn"]
+
+[ext_resource type="Script" path="res://TheScrapHeap/go_to_title.cs" id="1_y1b5o"]
+
+[node name="GoToTitle" type="Node"]
+script = ExtResource("1_y1b5o")

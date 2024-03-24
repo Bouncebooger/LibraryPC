@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ds8mg3lhf6lnr"]
+
+[ext_resource type="Script" path="res://UIComponents/start_game_button.cs" id="1_2qi1l"]
+
+[node name="StartGameButton" type="Button"]
+offset_right = 91.0
+offset_bottom = 31.0
+text = "PLAY
+"
+script = ExtResource("1_2qi1l")

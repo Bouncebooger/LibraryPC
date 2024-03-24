@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://y7wprt6101xj"]
+
+[ext_resource type="Script" path="res://EventAutoloadTools/event_bus_emitter.cs" id="1_ste73"]
+
+[node name="EventBusEmitter" type="Node"]
+script = ExtResource("1_ste73")

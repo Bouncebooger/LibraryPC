@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcnm0lku86sq"]
+
+[ext_resource type="PackedScene" uid="uid://dgu8hng6fsl3q" path="res://GameScreens/user_interface.tscn" id="1_j3oua"]
+
+[node name="EndlessLibrary" type="Node3D"]
+
+[node name="UserInterface" parent="." instance=ExtResource("1_j3oua")]
+
+[node name="Camera3D" type="Camera3D" parent="."]

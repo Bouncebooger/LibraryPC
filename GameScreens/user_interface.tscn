@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgu8hng6fsl3q"]
+
+[ext_resource type="PackedScene" uid="uid://c10l06somaqij" path="res://UIComponents/title_menu_button.tscn" id="1_bmrh3"]
+
+[node name="UserInterface" type="CanvasLayer"]
+
+[node name="TitleMenuButton" parent="." instance=ExtResource("1_bmrh3")]
+offset_left = 74.0
+offset_top = 119.0
+offset_right = 165.0
+offset_bottom = 150.0

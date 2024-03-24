@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bt238fw4rkh0q"]
+
+[ext_resource type="Script" path="res://UIComponents/main_menu.cs" id="1_kgr7o"]
+[ext_resource type="PackedScene" uid="uid://c10l06somaqij" path="res://UIComponents/title_menu_button.tscn" id="2_sk5vy"]
+[ext_resource type="PackedScene" uid="uid://ds8mg3lhf6lnr" path="res://UIComponents/start_game_button.tscn" id="3_po3k6"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_kgr7o")
+
+[node name="TitleMenuButton" parent="." instance=ExtResource("2_sk5vy")]
+layout_mode = 0
+offset_left = 194.0
+offset_top = 215.0
+offset_right = 285.0
+offset_bottom = 246.0
+
+[node name="StartGameButton" parent="." instance=ExtResource("3_po3k6")]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 295.0
+offset_right = 564.0
+offset_bottom = 326.0

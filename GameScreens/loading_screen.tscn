@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7vnxndbofcj7"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_yo6ih"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_gwtji"]
+
+[node name="LoadingScreen" type="Node2D"]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 1, 1)
+material = SubResource("CanvasItemMaterial_yo6ih")
+position = Vector2(431, 246)
+scale = Vector2(-661.827, 455.162)
+texture = SubResource("PlaceholderTexture2D_gwtji")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 333.0
+offset_top = 220.0
+offset_right = 424.0
+offset_bottom = 243.0
+text = "LOADING>>"
