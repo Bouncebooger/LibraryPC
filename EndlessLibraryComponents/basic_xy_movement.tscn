@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://2esrxxjrv3c5"]
+
+[ext_resource type="Script" path="res://EndlessLibraryComponents/basic_xy_movement.cs" id="1_ohs5d"]
+
+[node name="BasicXYMovement" type="Node"]
+script = ExtResource("1_ohs5d")

@@ -1,6 +1,8 @@
 using Godot;
 using System;
+//THIS IS A UNFINISHED HYPOTHETICAL COMPONENT AND IS NOT BEING USED ATM
 //USE FOR FAR OFF NODES ONLY
+//NOTE THAT THIS SEEMS VERY UNWIELDLY AND 
 public partial class event_bus_emitter : Node
 {
 

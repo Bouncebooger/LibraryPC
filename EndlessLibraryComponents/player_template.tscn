@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://c82x0ditlohsm"]
+
+[ext_resource type="PackedScene" uid="uid://d3enqliobu6cg" path="res://EndlessLibraryComponents/wasd_input_movement.tscn" id="1_06rmc"]
+[ext_resource type="Script" path="res://EndlessLibraryComponents/player_template.cs" id="1_ee5ea"]
+[ext_resource type="PackedScene" uid="uid://2esrxxjrv3c5" path="res://EndlessLibraryComponents/basic_xy_movement.tscn" id="3_w7y75"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_f8v8q"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_f4wlb"]
+
+[node name="PlayerTemplate" type="CharacterBody3D"]
+script = ExtResource("1_ee5ea")
+
+[node name="PlayerCollider" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_f8v8q")
+
+[node name="PlayerMesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_f4wlb")
+
+[node name="PlayerInput" parent="." instance=ExtResource("1_06rmc")]
+
+[node name="PlayerMovement" parent="." instance=ExtResource("3_w7y75")]
+MoveSpeed = 2.0

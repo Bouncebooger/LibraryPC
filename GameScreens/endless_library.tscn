@@ -1,9 +1,25 @@
-[gd_scene load_steps=2 format=3 uid="uid://bcnm0lku86sq"]
+[gd_scene load_steps=5 format=3 uid="uid://bcnm0lku86sq"]
 
 [ext_resource type="PackedScene" uid="uid://dgu8hng6fsl3q" path="res://GameScreens/user_interface.tscn" id="1_j3oua"]
+[ext_resource type="PackedScene" uid="uid://csaehu6oo7f4" path="res://EndlessLibraryComponents/prototyping_floor.tscn" id="2_upfny"]
+[ext_resource type="PackedScene" uid="uid://b0jx0e0kykhsy" path="res://EndlessLibraryComponents/prototyping_platform.tscn" id="3_q1jos"]
+[ext_resource type="PackedScene" uid="uid://c82x0ditlohsm" path="res://EndlessLibraryComponents/player_template.tscn" id="4_rqkfp"]
 
 [node name="EndlessLibrary" type="Node3D"]
 
 [node name="UserInterface" parent="." instance=ExtResource("1_j3oua")]
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="TestingCamera" type="Camera3D" parent="."]
+transform = Transform3D(0.999999, -0.000132953, -0.00171965, 0.000774552, 0.925453, 0.378861, 0.00154109, -0.378862, 0.925452, -2.38419e-07, 6.95965, -0.295131)
+
+[node name="PrototypingFloor" parent="." instance=ExtResource("2_upfny")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0281815, -10.5717)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.999983, -0.00150525, -0.00556801, 0.00568826, 0.417211, 0.908792, 0.000955081, -0.908808, 0.417213, 0, 7.45141, 0)
+light_energy = 10.905
+
+[node name="PrototypingPlatform" parent="." instance=ExtResource("3_q1jos")]
+
+[node name="PlayerTemplate" parent="." instance=ExtResource("4_rqkfp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.46939, -4.74214)
