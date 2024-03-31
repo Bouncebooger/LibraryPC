@@ -1,17 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://bcnm0lku86sq"]
+[gd_scene load_steps=7 format=3 uid="uid://bcnm0lku86sq"]
 
 [ext_resource type="PackedScene" uid="uid://dgu8hng6fsl3q" path="res://GameScreens/user_interface.tscn" id="1_j3oua"]
 [ext_resource type="PackedScene" uid="uid://csaehu6oo7f4" path="res://EndlessLibraryComponents/prototyping_floor.tscn" id="2_upfny"]
 [ext_resource type="PackedScene" uid="uid://b0jx0e0kykhsy" path="res://EndlessLibraryComponents/prototyping_platform.tscn" id="3_q1jos"]
 [ext_resource type="PackedScene" uid="uid://c82x0ditlohsm" path="res://EndlessLibraryComponents/player_template.tscn" id="4_rqkfp"]
-[ext_resource type="PackedScene" uid="uid://dif012qr3b5wf" path="res://EndlessLibraryComponents/SimpleHexFloor.tscn" id="5_ppmih"]
+[ext_resource type="PackedScene" uid="uid://bpd8122303dcr" path="res://EndlessLibraryComponents/map_factory.tscn" id="5_0r8tx"]
+[ext_resource type="PackedScene" uid="uid://yu6fwavy5bh8" path="res://EndlessLibraryComponents/temp_lib_hex_scene.tscn" id="6_w3rrd"]
 
 [node name="EndlessLibrary" type="Node3D"]
 
 [node name="UserInterface" parent="." instance=ExtResource("1_j3oua")]
 
 [node name="TestingCamera" type="Camera3D" parent="."]
-transform = Transform3D(0.999999, -0.000132953, -0.00171965, 0.000774552, 0.925453, 0.378861, 0.00154109, -0.378862, 0.925452, -2.38419e-07, 6.95965, -0.295131)
+transform = Transform3D(0.999999, -0.000132951, -0.00171965, 0.00148535, 0.573173, 0.819433, 0.000876715, -0.819434, 0.573172, -2.38419e-07, 19.5515, -0.295131)
 
 [node name="PrototypingFloor" parent="." instance=ExtResource("2_upfny")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0281815, -10.5717)
@@ -25,5 +26,6 @@ light_energy = 10.905
 [node name="PlayerTemplate" parent="." instance=ExtResource("4_rqkfp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.46939, -4.74214)
 
-[node name="SimpleHexFloor" parent="." instance=ExtResource("5_ppmih")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.70349, 0.677685, -7.40457)
+[node name="MapFactory" parent="." instance=ExtResource("5_0r8tx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0361986, -0.0529327, -12.5609)
+HexTiles = ExtResource("6_w3rrd")

@@ -29,7 +29,7 @@ public partial class basic_xy_movement : Node
 			MoveDir.X = XAxis;
 			MoveDir.Z = ZAxis;
 			MoveDir = MoveDir.Normalized() * MoveSpeed;
-            GD.Print("StillWorkin",XAxis,ZAxis);
+           // GD.Print("StillWorkin",XAxis,ZAxis);
         }
 		Funny.Velocity =MoveDir;
 		//GD.Print(Funny.Velocity, " is the velocity of the charbod ", MoveDir, "is what it should be");
