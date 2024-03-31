@@ -13,14 +13,24 @@ script = ExtResource("1_kgr7o")
 
 [node name="TitleMenuButton" parent="." instance=ExtResource("2_sk5vy")]
 layout_mode = 0
-offset_left = 194.0
-offset_top = 215.0
-offset_right = 285.0
-offset_bottom = 246.0
+offset_left = 529.0
+offset_top = 396.0
+offset_right = 620.0
+offset_bottom = 427.0
 
 [node name="StartGameButton" parent="." instance=ExtResource("3_po3k6")]
 layout_mode = 0
-offset_left = 473.0
-offset_top = 295.0
-offset_right = 564.0
-offset_bottom = 326.0
+offset_left = 527.0
+offset_top = 447.0
+offset_right = 618.0
+offset_bottom = 478.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 389.0
+offset_top = 267.0
+offset_right = 802.0
+offset_bottom = 358.0
+theme_override_font_sizes/font_size = 30
+text = "Procedural Proof Of Concept
+"

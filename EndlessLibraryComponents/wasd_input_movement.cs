@@ -16,7 +16,7 @@ public partial class wasd_input_movement : Node
 	{
 		EmitSignal(SignalName.MovementAxes,
 			Input.GetAxis("MoveLeft", "MoveRight"), 
-			Input.GetAxis("MoveBackward", "MoveForward"));
+			Input.GetAxis("MoveForward", "MoveBackward"));
 		
 
 	}

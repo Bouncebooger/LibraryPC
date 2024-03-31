@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dgu8hng6fsl3q"]
+[gd_scene load_steps=3 format=3 uid="uid://dgu8hng6fsl3q"]
 
 [ext_resource type="PackedScene" uid="uid://c10l06somaqij" path="res://UIComponents/title_menu_button.tscn" id="1_bmrh3"]
+[ext_resource type="Script" path="res://GameScreens/MapGenButton.cs" id="2_tsvcj"]
 
 [node name="UserInterface" type="CanvasLayer"]
 
@@ -9,3 +10,11 @@ offset_left = 74.0
 offset_top = 119.0
 offset_right = 165.0
 offset_bottom = 150.0
+
+[node name="MapGenButton" type="Button" parent="."]
+offset_left = 71.0
+offset_top = 161.0
+offset_right = 165.0
+offset_bottom = 203.0
+text = "Reroll!"
+script = ExtResource("2_tsvcj")

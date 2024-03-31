@@ -7,3 +7,6 @@
 script = ExtResource("1_goev5")
 
 [node name="HexGen" parent="." instance=ExtResource("2_37f3w")]
+
+[node name="ConstructedMap" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0480862, 0, 0.0262696)

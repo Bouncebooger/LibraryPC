@@ -29,3 +29,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.46939, -4.74214)
 [node name="MapFactory" parent="." instance=ExtResource("5_0r8tx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0361986, -0.0529327, -12.5609)
 HexTiles = ExtResource("6_w3rrd")
+MapSize = 20

@@ -12,13 +12,17 @@ public partial class map_factory : Node3D
 	// Called when the node enters the scene tree for the first time.
 	[Export]
 	public PackedScene HexTiles;
+	[Export]
+	public int MapSize;
 
 	private map_param_gen Mpg;
 	private Array MadeMapParam;
 	public override void _Ready()
 	{
-		Mpg = GetNode<map_param_gen>("HexGen");
-		MadeMapParam = Mpg.GenerateHexParam(5);
+        scene_event_bus_autoload SEB = GetNode<scene_event_bus_autoload>("/root/SceneEventBusAutoload");
+		SEB.MapGenRequest += RedoMap;
+        Mpg = GetNode<map_param_gen>("HexGen");
+		MadeMapParam = Mpg.GenerateHexParam(MapSize);
 		CreateMap(MadeMapParam);
 	}
 
@@ -38,7 +42,7 @@ public partial class map_factory : Node3D
 			GD.Print("\n", "This Tuple Made it", HexNode);
 			Node3D NewHex = HexTiles.Instantiate<Node3D>();
 			NewHex.Name = $"HexTile_{HexTag}";
-			AddChild(NewHex);
+			GetNode("ConstructedMap").AddChild(NewHex);
 			//if (HexTag ==0)
 			switch (HexNode.Item2) {
 				case (int)SidesOut.SIDE4:
@@ -72,8 +76,24 @@ public partial class map_factory : Node3D
 	}
 
 	
-	private void PlaceHex()
+	//Very Icky, better Idea in future to queue free the whole map and remake the whole thing
+	private void RemoveMap()
 	{
-		
+		GD.Print("The amount of nodes grabbed ",GetNode("ConstructedMap").GetChildren().Count);
+		//int x = 0;
+    foreach ( Node3D target in GetNode("ConstructedMap").GetChildren())
+		{
+			target.QueueFree();
+		}
+	
 	}
+
+	public void RedoMap()
+	{
+		RemoveMap();
+        Mpg = GetNode<map_param_gen>("HexGen");
+        MadeMapParam = Mpg.GenerateHexParam(MapSize);
+        CreateMap(MadeMapParam);
+
+    }
 }
