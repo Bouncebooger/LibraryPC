@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://71jxv8kt871t"]
+
+[ext_resource type="Script" path="res://EndlessLibraryComponents/map_param_gen.cs" id="1_po2wa"]
+
+[node name="MapParamGen" type="Node"]
+script = ExtResource("1_po2wa")

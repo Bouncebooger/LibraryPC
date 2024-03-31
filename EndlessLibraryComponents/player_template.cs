@@ -4,7 +4,8 @@ using System;
 public partial class player_template : CharacterBody3D
 {
 
-
+	//Add 3D camera 
+	//Add Rotation control?
 
 	// Get the gravity from the project settings to be synced with RigidBody nodes.
 	//public float gravity = ProjectSettings.GetSetting("physics/3d/default_gravity").AsSingle();
@@ -26,6 +27,7 @@ public partial class player_template : CharacterBody3D
 	{
 		//GD.Print(XAxis,"is X and ",ZAxis, " is Z");
 		MovementNode.MoveInXZ(this, XAxis, ZAxis);
-	}
+       
+    }
 
 }

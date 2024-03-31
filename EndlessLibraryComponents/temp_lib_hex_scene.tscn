@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://yu6fwavy5bh8"]
+
+[ext_resource type="PackedScene" uid="uid://dif012qr3b5wf" path="res://EndlessLibraryComponents/SimpleHexFloor.tscn" id="1_hpijr"]
+[ext_resource type="Script" path="res://EndlessLibraryComponents/temp_lib_hex_scene.cs" id="1_j41vv"]
+
+[node name="TempLibHexScene" type="Node3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+script = ExtResource("1_j41vv")
+
+[node name="SimpleHexFloor" parent="." instance=ExtResource("1_hpijr")]

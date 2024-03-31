@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://djbj1sirjx2fy"]
+
+[node name="EmergencyMap" type="Node3D"]

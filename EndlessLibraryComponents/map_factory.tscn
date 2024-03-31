@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpd8122303dcr"]
+
+[ext_resource type="Script" path="res://EndlessLibraryComponents/map_factory.cs" id="1_goev5"]
+
+[node name="MapFactory" type="Node3D"]
+script = ExtResource("1_goev5")

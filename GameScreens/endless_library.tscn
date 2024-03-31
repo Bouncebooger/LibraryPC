@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bcnm0lku86sq"]
+[gd_scene load_steps=6 format=3 uid="uid://bcnm0lku86sq"]
 
 [ext_resource type="PackedScene" uid="uid://dgu8hng6fsl3q" path="res://GameScreens/user_interface.tscn" id="1_j3oua"]
 [ext_resource type="PackedScene" uid="uid://csaehu6oo7f4" path="res://EndlessLibraryComponents/prototyping_floor.tscn" id="2_upfny"]
 [ext_resource type="PackedScene" uid="uid://b0jx0e0kykhsy" path="res://EndlessLibraryComponents/prototyping_platform.tscn" id="3_q1jos"]
 [ext_resource type="PackedScene" uid="uid://c82x0ditlohsm" path="res://EndlessLibraryComponents/player_template.tscn" id="4_rqkfp"]
+[ext_resource type="PackedScene" uid="uid://dif012qr3b5wf" path="res://EndlessLibraryComponents/SimpleHexFloor.tscn" id="5_ppmih"]
 
 [node name="EndlessLibrary" type="Node3D"]
 
@@ -23,3 +24,6 @@ light_energy = 10.905
 
 [node name="PlayerTemplate" parent="." instance=ExtResource("4_rqkfp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.46939, -4.74214)
+
+[node name="SimpleHexFloor" parent="." instance=ExtResource("5_ppmih")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.70349, 0.677685, -7.40457)
